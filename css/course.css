@@ -1,0 +1,155 @@
+@charset "uft-8";
+.main_header{
+  width: 960px;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 30px; 
+}
+/* 헤더 */
+.header{
+  float: left;
+  width: 400px;
+  height:160px;
+  /* background-color: yellow; */
+}
+.header p{ 
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+.header h1{
+  font-size: 35px;
+  letter-spacing: 3px;
+  line-height: 40px;
+}
+/* 오른쪽 로그인, 조인, 마이페이지 */
+.right_nav{
+  float: right;
+  width:200px;
+  /* background-color: pink; */
+}
+.right_nav li{
+  text-align: right;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+/* section - v_line */
+.section{
+  width: 960px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.v_line{
+  float: left;
+  width: 200px;
+  height: 350px;
+  border-left: 4px double rgb(77, 191, 239);
+  /* background-color: orange; */
+}
+.v_line li{
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.v_line a:hover{
+  color: steelblue;
+  font-weight: bold;
+}
+/* 해당 메뉴바 선택시  */
+.v_line li:nth-of-type(2)>a{
+  color: steelblue;
+  font-weight: bold;
+}
+
+/* section - 메인 */
+.main{
+  float: right;
+  width: 750px;
+  height: 700px; 
+  /* margin-right: 100px;  수정 */
+  border: 1px solid #000; /* 삭제 */
+}
+.map{
+  float: left;
+  margin-left: 20px;
+  background-color: yellow; /* 수정 */
+}
+label{
+  display: block;
+  font-size: 18px;
+}
+.map input{
+  width: 140px;
+  height: 25px;
+}
+.map select{
+  width: 70px;
+  height: 25px;
+}
+.map iframe{
+  display:block;
+}
+
+.map img{
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+/* text */
+.textbox{
+  display: block;
+  float:right;
+  width:300px;
+  height:600px;
+  margin-top: 20px;
+  /* margin-right: 10px; */
+  border: 1px solid #000;
+  background-color: red;
+  margin:0 auto;
+}
+.textbox img{
+  width: 50px;
+  height: 50px;
+}
+
+
+.textbox textarea{
+  resize: none;
+  font-size: 16px;
+  margin:0 auto;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+  width: 960px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  color: gray
+}
+.footer1{
+  float: left;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.footer1>a{
+  color: gray;
+}
+.footer2{
+  float: right;
+  font-size: 13px;
+  text-align: right;
+}
+.footer2 li{
+  padding: 3px;
+}

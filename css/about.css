@@ -1,0 +1,128 @@
+@charset "uft-8";
+.main_header{
+  width: 960px;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 30px; 
+}
+/* 헤더 */
+.header{
+  float: left;
+  width: 400px;
+  height:160px;
+  /* background-color: yellow; */
+}
+.header p{ 
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+.header h1{
+  font-size: 35px;
+  letter-spacing: 3px;
+  line-height: 40px;
+}
+/* 오른쪽 로그인, 조인, 마이페이지 */
+.right_nav{
+  float: right;
+  width:200px;
+  /* background-color: pink; */
+}
+.right_nav li{
+  text-align: right;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+/* section - v_line */
+.section{
+  width: 960px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.v_line{
+  float: left;
+  width: 200px;
+  height: 350px;
+  border-left: 4px double rgb(77, 191, 239);
+  /* background-color: orange; */
+}
+.v_line li{
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.v_line a:hover{
+  color: steelblue;
+  font-weight: bold;
+}
+/* 해당 메뉴바 선택시  */
+.v_line li:first-child > a{
+  color: steelblue;
+  font-weight: bold;
+}
+
+/* section - 메인 */
+.main{
+  float: right;
+  width: 570px;
+  height: 400px; 
+  margin-right: 100px;  /* 수정 */
+  /* border: 1px solid #000; 삭제 */
+}
+.main span{
+  color: rgb(50, 119, 175);
+  font-weight: bold;
+}
+.main img{
+  float:left;
+  width:22px;
+  height:22px;
+}
+.about{
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+.about p{
+  margin-top: 20px;
+  font-size: 16px;
+  height: 70px;
+  line-height: 23px;
+  vertical-align: middle;
+  /* border: 1px solid #000; */
+}
+
+.reason{
+  letter-spacing: 1px;
+}
+.reason>h2{
+  margin-bottom: 20px;
+}
+.reason li{
+  margin-bottom: 5px;
+  line-height: 25px;
+}
+
+/* footer */
+footer{
+  width: 960px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  color: gray
+}
+.footer1{
+  float: left;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.footer1>a{
+  color: gray;
+}
+.footer2{
+  float: right;
+  font-size: 13px;
+  text-align: right;
+}
+.footer2 li{
+  padding: 3px;
+}

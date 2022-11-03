@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@1,100&family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="./z_images/airplane.png">
+</head>
+<body>
+  <header class="main_header">
+    <div class="header">
+      <a href="index.html">
+        <p>J들을 위한 여행계획 플래너</p>
+        <h1>Z(제트) ;</h1> 
+        <h1>J Travel</h1>
+      </a>
+    </div>
+    <!-- 로그인, 가입, 마이페이지 -->
+    <div class="right_nav">
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="member.html">Join</a></li><br>
+        <li><a href="#">My page</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 본문 : 메뉴바 & 메인-->
+  <div class="section">
+    <nav class="v_line">
+      <ul>
+        <li><a href="about.html">About Z</a></li><br>
+        <li><a href="course.html">My Course</a></li>
+        <li><a href="diary.html">Travel Diary</a></li>
+        <li><a href="#">Domestic</a></li>
+        <li><a href="#">Overseas</a></li>
+        <li><a href="#">Community</a></li>
+        </ul>
+    </nav> 
+    <!-- 메인 : 폼-테이블 -->
+    <div class="main">
+      <!-- id로 css 설정 -->
+      <h1>Login</h1>
+      <form action="" method="post" name="login" id="login">
+        <table border="0">
+          <tr> <!-- id -->
+            <th>
+              <label for="user_id">I D</label>
+            </th>
+            <td>
+              <input type="text" name="user_id" id="user_id" required>
+            </td>
+          </tr>
+          <tr>  <!-- pw -->
+            <th>
+              <label for="user_pw">Password</label>
+            </th>
+            <td>
+              <input type="password" name="user_pw" id="user_pw" required>
+            </td>
+          </tr>
+          <tr>  <!-- login 버튼 -->
+            <td colspan="2">
+              <input type="submit" name="log_btn" id="log_btn" value="Login">
+            </td>
+          </tr>
+          <tr>  <!-- join, find id/pw 버튼 -->
+            <td colspan="2">
+              <a href="./member.html"><input type="button" name="join_btn" id="join_btn" value="Join"></a>
+              <input type="button" name="find_id" id="find_id" value="Find ID">
+              <input type="button" name="find_pw" id="find_pw" value="Find PW">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>   
+  </div>
+
+<!-- footer -->
+<footer>
+  <div class="footer1">
+    <a href="#">회사소개</a> &nbsp;|&nbsp;
+    <a href="#">개인정보처리방침</a> &nbsp;|&nbsp;
+    <a href="#">이용규정</a> &nbsp;|&nbsp;
+    <a href="#">고객센터</a>
+  </div>
+  <div class="footer2">
+    <ul>
+      <li>J Trval CEO : KIM SUYEON &nbsp;&nbsp;|&nbsp;&nbsp; CopyRight&copy;2022 All Rigth Reserved
+      </li>
+      <li>서울특별시 강남구 삼성동 &nbsp;&nbsp;|&nbsp;&nbsp; kakao ID) J travel & call) 02-1234-5678</li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

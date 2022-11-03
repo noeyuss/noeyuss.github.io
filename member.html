@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Join member</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/member.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@1,100&family=Noto+Serif+KR:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="./z_images/airplane.png">
+</head>
+<body>
+  <header class="main_header">
+    <div class="header">
+      <a href="index.html">
+        <p>J들을 위한 여행계획 플래너</p>
+        <h1>Z(제트) ;</h1> 
+        <h1>J Travel</h1>
+      </a>
+    </div>
+    <!-- 로그인, 가입, 마이페이지 -->
+    <div class="right_nav">
+      <ul>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="member.html">Join</a></li><br>
+        <li><a href="#">My page</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 본문 : 메뉴바 & 메인 -->
+  <div class="section">
+    <nav class="v_line">
+      <ul>
+        <li><a href="about.html">About Z</a></li><br>
+        <li><a href="course.html">My Course</a></li>
+        <li><a href="diary.html">Travel Diary</a></li>
+        <li><a href="#">Domestic</a></li>
+        <li><a href="#">Overseas</a></li>
+        <li><a href="#">Community</a></li>
+      </ul>
+    </nav>
+    <!-- 메인 : 폼-테이블 -->
+    <div class="main">
+      <h1>Join Member !</h1>
+      <form action="" method="post" name="member" id="member">
+        <table border="0">
+          <tr>  <!-- name -->
+            <th><label for="name">Name</label></th>
+            <td><input type="text" name="name" id="name" maxlength="15" required></td>
+          </tr>
+          <tr>  <!-- id -->
+            <th><label for="user_id">I D</label></th>
+            <td>
+              <input type="text" name="user_id" id="user_id" maxlength="30" required>
+              <input type="button" name="id_check" id="id_check" value="중복 확인">
+            </td>
+          </tr>
+          <tr>  <!-- password -->
+            <th><label for="user_pw">Password</label></th>
+            <td><input type="password" name="user_pw" id="user_pw" required placeholder="영문,숫자,특수문자 포함 8자리 이상" minlength="8"></td>
+          </tr>
+          <tr>  <!-- password check -->
+            <th><label for="user_pw2">Password check</label></th>
+            <td><input type="password" name="user_pw2" id="user_pw2" required placeholder="비밀번호를 다시 입력해주세요." minlength="8"></td>
+          </tr>
+          <tr>  <!-- email -->
+            <th><label for="email">E-Mail</label></th>
+            <td>
+              <input type="text" name="email" id="email">
+              <select name="e_addr" id="e_addr">
+                <option value="naver">@naver.com</option>
+                <option value="google">@google.com</option>
+                <option value="kakao">@kakao.com</option>
+                <option value="daum">@daum.net</option>
+                <option value="hanmail">@hanmail.net</option>
+                <option value="msn">@msn.com</option>
+                <option value="input">직접입력</option>
+              </select>
+            </td>
+          </tr>
+          <tr>  <!-- phone -->
+            <th><label for="phone">Phone</label></th>
+            <td>
+              <input type="text" name="phone1" id="phone1" maxlength="3"> -
+              <input type="text" name="phone2" id="phone2" maxlength="4"> -
+              <input type="text" name="phone3" id="phone3" maxlength="4">
+              <input type="button" name="ph_send" id="ph_send" value="인증번호 발송">
+            </td>
+          </tr>
+          <tr> <!-- phone check -->
+            <th><label for="phone_num">Number</label></th>
+            <td>
+              <input type="text" name="phone_num" id="phone_num" placeholder="인증번호 6자리를 입력해주세요." maxlength="6">
+              <input type="button" name="ph_check" id="ph_check" value="확인">
+            </td>
+          </tr>
+
+          <tr>  <!-- 동의1 -->
+            <td colspan="2">필수) 개인정보 수집・이용 동의<input type="checkbox" name="agree1" id="agree1" required>
+            </td>
+          </tr>  
+          <tr>  <!-- 동의2 -->
+            <td colspan="2">선택) 개인정보 제3자 제공<input type="checkbox" name="agree2" id="agree2">
+            </td>
+          </tr>  
+          <tr> <!-- 동의3 -->
+            <td colspan="2">선택) 마케팅 및 광고활용 동의<input type="checkbox" name="agree3" id="agree3">
+            </td>
+          </tr>
+          <tr>  <!-- join / cancel btn -->
+            <td colspan="2"><input type="submit" name="join" id="join" value="Join"><input type="reset" name="cancel" id="cancel" value="Cancel"></td>
+          </tr>
+        </table>
+      </form>
+
+    
+    </div>  
+    
+  </div>
+
+  <!-- footer -->
+  <footer>
+    <div class="footer1">
+      <a href="#">회사소개</a> &nbsp;|&nbsp;
+      <a href="#">개인정보처리방침</a> &nbsp;|&nbsp;
+      <a href="#">이용규정</a> &nbsp;|&nbsp;
+      <a href="#">고객센터</a>
+    </div>
+    <div class="footer2">
+      <ul>
+        <li>J Trval CEO : KIM SUYEON &nbsp;&nbsp;|&nbsp;&nbsp; CopyRight&copy;2022 All Rigth Reserved
+        </li>
+        <li>서울특별시 강남구 삼성동 &nbsp;&nbsp;|&nbsp;&nbsp; kakao ID) J travel & call) 02-1234-5678</li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>

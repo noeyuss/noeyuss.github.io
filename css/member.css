@@ -1,0 +1,177 @@
+@charset "uft-8";
+.main_header{
+  width: 960px;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 30px; 
+}
+/* 헤더 */
+.header{
+  float: left;
+  width: 400px;
+  height:160px;
+  /* background-color: yellow; */
+}
+.header p{ 
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+.header h1{
+  font-size: 35px;
+  letter-spacing: 3px;
+  line-height: 40px;
+}
+/* 오른쪽 로그인, 조인, 마이페이지 */
+.right_nav{
+  float: right;
+  width:200px;
+  /* background-color: pink; */
+}
+.right_nav li{
+  text-align: right;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+/* section - v_line */
+.section{
+  width: 960px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.v_line{
+  float: left;
+  width: 200px;
+  height: 350px;
+  border-left: 4px double rgb(77, 191, 239);
+  /* background-color: orange; */
+}
+.v_line li{
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.v_line a:hover{
+  color: steelblue;
+  font-weight: bold;
+}
+
+/* section - 메인 */
+.main{
+  float: right;
+  width: 600px;
+  /* height: 400px;  */
+  margin-right: 100px;  /* 수정 */
+  margin-bottom: 20px;
+  /* border: 1px solid #000; 삭제 */
+}
+.main>h1{
+  margin-bottom: 10px;
+  text-align: center;
+}
+.main table{
+  border-collapse: collapse;
+  border-spacing: 0px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+tr{
+  height: 50px;
+}
+th{
+  width:150px;
+  background-color: aliceblue;
+}
+
+/* td, input, 체크박스 크기조정  */
+td{
+  padding:0 10px;
+  /* width: 400px; */
+}
+td>input{ /* 모든 input */
+  width: 200px;
+  height: 30px;
+  /* margin-left:10px;
+  margin-right:10px; */
+}
+td>select{  /* 이메일의 셀렉박스 */
+  width: 130px;
+  height: 30px;
+}
+#name, #user_id{
+  width: 150px;
+}
+#email{
+  width:120px;
+}
+#phone1, #phone2, #phone3, #ph_check{
+  width:50px;
+}
+#agree1, #agree2, #agree3{
+  width: 18px;
+  height:18px;
+  float:right;
+}
+/*  버튼 크기, 배경, 속성 등 지정 */
+#join{
+  width: 330px;
+  height: 40px;
+  margin-top: 20px;
+  margin-right: 10px;
+  background-color: skyblue;
+  font-size: 17px;
+  border: none;
+  border-radius: 3px;
+
+}
+#cancel{
+  width: 100px;
+  height: 40px;
+}
+#id_check, #ph_send {
+  width:80px;
+}
+
+#id_check, #ph_send, #ph_check, #cancel{
+  background-color: aliceblue;
+  border: none;
+  border-radius: 3px;
+}
+#id_check:hover, #ph_send:hover, #ph_check:hover, #cancel:hover, #join:hover{
+  background-color: steelblue;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* footer */
+footer{
+  width: 960px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  color: gray
+}
+.footer1{
+  float: left;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.footer1>a{
+  color: gray;
+}
+.footer2{
+  float: right;
+  font-size: 13px;
+  text-align: right;
+}
+.footer2 li{
+  padding: 3px;
+}

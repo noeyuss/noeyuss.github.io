@@ -1,0 +1,30 @@
+  /* 초기화 */
+  *{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+  }
+  html{
+    line-height: 1;
+    /* font-size: 0.625em; */
+    
+  }
+  body{   
+    width: 960px;
+    margin: 0px auto;   /* 가운데 정렬 ! */
+    font-family: 'Noto Serif KR', serif;
+  }
+  a{
+    text-decoration: none;
+    color: #000;  /* 색상코드: #000000, #000, rgb(0,0,0) */
+  }
+  a:visited{  
+    text-decoration: none;
+    color: #000;
+  }
+  ul{ margin: 0; padding: 0;} 
+  ul, ol, li{ list-style: none;}
+  img{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+  }

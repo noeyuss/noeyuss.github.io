@@ -1,0 +1,141 @@
+@charset "uft-8";
+.main_header{
+  width: 960px;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 30px; 
+}
+/* 헤더 */
+.header{
+  float: left;
+  width: 400px;
+  height:160px;
+  /* background-color: yellow; */
+}
+.header p{ 
+  font-size: 17px;
+  padding-bottom: 20px;
+}
+.header h1{
+  font-size: 35px;
+  letter-spacing: 3px;
+  line-height: 40px;
+}
+/* 오른쪽 로그인, 조인, 마이페이지 */
+.right_nav{
+  float: right;
+  width:200px;
+  /* background-color: pink; */
+}
+.right_nav li{
+  text-align: right;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+/* section - v_line */
+.section{
+  width: 960px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.v_line{
+  float: left;
+  width: 200px;
+  height: 350px;
+  border-left: 4px double rgb(77, 191, 239);
+  /* background-color: orange; */
+}
+.v_line li{
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.v_line a:hover{
+  color: steelblue;
+  font-weight: bold;
+}
+
+/* section - 메인 */
+.main{
+  float: right;
+  width: 500px;
+  height: 400px; /* index, login, member 고정 */
+  margin-right: 200px;  /* 수정 */
+  /* border: 1px solid #000; 삭제 */
+}
+.main>h1{
+  text-align: center;
+  margin-top: 30px; /* 수정 */
+}
+.main table{
+  border-collapse: collapse;
+  border-spacing: 0px;
+  margin: 0 auto;
+  margin-top: 30px; /* 수정 */
+  text-align: center;
+}
+tr{
+  height: 50px; 
+}
+th, td{
+  width: 50px;  /* ---------버튼크기 때문에 불필요해짐..? */
+}
+th{
+  background-color: aliceblue;
+}
+#user_id, #user_pw{
+  width: 170px;
+  height: 35px;
+}
+#log_btn{
+  margin-top: 15px;
+  width: 270px;
+  height: 35px;
+  font-size: 17px;
+  border-radius: 3px;
+  border: none;
+  background-color: skyblue;
+}
+#join_btn, #find_id, #find_pw{
+  margin-bottom: 5px;
+  width: 80px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 3px;
+  border: none;
+  background-color: aliceblue;
+}
+#join_btn, #find_id{
+  margin-right:10px;
+}
+
+#log_btn:hover, #join_btn:hover, #find_id:hover, #find_pw:hover{
+  background: steelblue;
+  color: white;
+}
+
+/* footer */
+footer{
+  width: 960px;
+  overflow: hidden;
+  margin-bottom: 30px;
+  color: gray
+}
+.footer1{
+  float: left;
+  margin-top: 20px;
+  font-size: 13px;
+}
+.footer1>a{
+  color: gray;
+}
+.footer2{
+  float: right;
+  font-size: 13px;
+  text-align: right;
+}
+.footer2 li{
+  padding: 3px;
+}
